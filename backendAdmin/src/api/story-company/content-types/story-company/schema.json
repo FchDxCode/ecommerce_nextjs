@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "story_companies",
+  "info": {
+    "singularName": "story-company",
+    "pluralName": "story-companies",
+    "displayName": "Perjalanan Perusahaan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tahun": {
+      "type": "integer",
+      "required": true
+    },
+    "preview_detail": {
+      "type": "string",
+      "required": true
+    },
+    "detail": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+export const getInstagramPosts = async () => {
+    try {
+      const root = "https://ensembledata.com/apis"; // Pastikan root didefinisikan di dalam fungsi
+      const endpoint = "/instagram/user/posts";
+      const token = "UFiNQkgzjI1JdXFD"; // Token API Anda
+      const userId = "2845903097"; // User ID Cristiano Ronaldo
+  
+      const params = {
+        user_id: userId,
+        depth: 1,
+        chunk_size: 1, // Ambil 1 post untuk percobaan
+        token: token,
+      };
+  
+      const queryString = new URLSearchParams(params).toString();
+      const url = `${root}${endpoint}?${queryString}`;
+  
+      const response = await fetch(url);
+      const data = await response.json();
+  
+      console.log("📢 API Response:", JSON.stringify(data, null, 2)); // Debugging log
+  
+      if (data && data.data && data.data.posts.length > 0) {
+        const post = data.data.posts[0].node; // Ambil 1 post pertama
+        console.log("📌 POST ITEM:", post); // Debug per post
+  
+        return [
+          {
+            media_url: post.display_url, // Gambar utama postingan
+            caption: post.edge_media_to_caption.edges.length > 0
+              ? post.edge_media_to_caption.edges[0].node.text
+              : "Instagram Post",
+            permalink: `https://www.instagram.com/p/${post.shortcode}/`,
+          },
+        ];
+      } else {
+        console.error("⚠️ Tidak ada postingan ditemukan. Cek data API di console.");
+        return [];
+      }
+    } catch (error) {
+      console.error("❌ Error fetching Instagram posts:", error.message || error);
+      return [];
+    }
+  };
+  

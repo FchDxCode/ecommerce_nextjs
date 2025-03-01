@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "cta_banners",
+  "info": {
+    "singularName": "cta-banner",
+    "pluralName": "cta-banners",
+    "displayName": "CTA Banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_cta": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle_cta": {
+      "type": "string",
+      "required": true
+    },
+    "link_cta": {
+      "type": "string",
+      "required": true
+    },
+    "image_banner_cta": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

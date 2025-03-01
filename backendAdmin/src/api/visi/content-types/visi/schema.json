@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "visis",
+  "info": {
+    "singularName": "visi",
+    "pluralName": "visis",
+    "displayName": "visi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

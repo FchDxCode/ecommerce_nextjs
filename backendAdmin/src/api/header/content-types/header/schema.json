@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_header": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle_header": {
+      "type": "string",
+      "required": true
+    },
+    "icon_header": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

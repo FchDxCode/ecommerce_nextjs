@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_structures",
+  "info": {
+    "singularName": "company-structure",
+    "pluralName": "company-structures",
+    "displayName": "Struktur Perusahaan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

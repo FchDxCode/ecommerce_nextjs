@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "cover_tentangkamis",
+  "info": {
+    "singularName": "cover-tentangkami",
+    "pluralName": "cover-tentangkamis",
+    "displayName": "Banner Tentang Kami",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

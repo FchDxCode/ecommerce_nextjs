@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Kontak",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "no_tlpn": {
+      "type": "biginteger",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "link_fb": {
+      "type": "string",
+      "required": true
+    },
+    "link_twiter": {
+      "type": "string",
+      "required": true
+    },
+    "link_ig": {
+      "type": "string",
+      "required": true
+    },
+    "link_linkedin": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

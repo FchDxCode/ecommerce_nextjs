@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategori_products",
+  "info": {
+    "singularName": "kategori-product",
+    "pluralName": "kategori-products",
+    "displayName": "Kategori Produk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_kategori": {
+      "type": "string",
+      "required": true
+    },
+    "image_kategori": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

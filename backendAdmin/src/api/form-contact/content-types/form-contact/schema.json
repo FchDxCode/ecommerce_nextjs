@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_contacts",
+  "info": {
+    "singularName": "form-contact",
+    "pluralName": "form-contacts",
+    "displayName": "Formulir Kontak",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nama_lengkap": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "pesan": {
+      "type": "text"
+    },
+    "no_tlpn": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "katalogs",
+  "info": {
+    "singularName": "katalog",
+    "pluralName": "katalogs",
+    "displayName": "katalog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_katalog": {
+      "type": "string",
+      "required": true
+    },
+    "image_katalog": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "pdf_katalog": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "kategori_katalog": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kategori-katalog.kategori-katalog"
+    }
+  }
+}

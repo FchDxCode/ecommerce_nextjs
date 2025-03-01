@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Produk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_product": {
+      "type": "string",
+      "required": true
+    },
+    "kategori_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kategori-product.kategori-product"
+    },
+    "price_product": {
+      "type": "float",
+      "required": true
+    },
+    "image_product": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description_product": {
+      "type": "richtext",
+      "required": true
+    },
+    "keunggulan_product": {
+      "type": "richtext",
+      "required": true
+    },
+    "diskon_product": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

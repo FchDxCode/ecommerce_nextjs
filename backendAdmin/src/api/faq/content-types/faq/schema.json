@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_faq": {
+      "type": "string"
+    },
+    "description_faq": {
+      "type": "text"
+    },
+    "kategori_faq": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::kategori-faq.kategori-faq"
+    }
+  }
+}

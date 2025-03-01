@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategori_katalogs",
+  "info": {
+    "singularName": "kategori-katalog",
+    "pluralName": "kategori-katalogs",
+    "displayName": "Kategori Katalog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_kategori_katalog": {
+      "type": "string",
+      "required": true
+    },
+    "icon_kategori_katalog": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

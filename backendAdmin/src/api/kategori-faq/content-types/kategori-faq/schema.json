@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategori_faqs",
+  "info": {
+    "singularName": "kategori-faq",
+    "pluralName": "kategori-faqs",
+    "displayName": "Kategori Faq",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_kategori_faq": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

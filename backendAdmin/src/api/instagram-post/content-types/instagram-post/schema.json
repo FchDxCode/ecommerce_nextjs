@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "instagram_posts",
+  "info": {
+    "singularName": "instagram-post",
+    "pluralName": "instagram-posts",
+    "displayName": "Instagram Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "instagram_account_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "link_instagram_post": {
+      "type": "string",
+      "required": true
+    },
+    "end_point_instagram": {
+      "type": "string",
+      "required": true
+    },
+    "token_api_pihak3": {
+      "type": "string",
+      "required": true
+    },
+    "total_data": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slider_katalogs",
+  "info": {
+    "singularName": "slider-katalog",
+    "pluralName": "slider-katalogs",
+    "displayName": "Slider Katalog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_slider_katalog": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

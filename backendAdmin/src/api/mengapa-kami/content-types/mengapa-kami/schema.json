@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mengapa_kamis",
+  "info": {
+    "singularName": "mengapa-kami",
+    "pluralName": "mengapa-kamis",
+    "displayName": "Mengapa Kami",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_mengapakami": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle_mengapakami": {
+      "type": "string",
+      "required": true
+    },
+    "icon_mengapakami": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

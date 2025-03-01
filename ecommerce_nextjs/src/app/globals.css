@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/****** Styling Google Translate Widget ******/
+#google_translate_element select {
+  background: transparent;
+  border: none;
+  color: #2c3e50; /* Ubah warna teks dropdown */
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.goog-te-gadget {
+  font-family: "Arial", sans-serif !important;
+  font-size: 0 !important; /* Sembunyikan teks bawaan */
+}
+
+.goog-te-gadget span {
+  display: none !important; /* Sembunyikan tulisan bawaan "Select Language" */
+}
+
+.goog-te-combo {
+  background: #ffffff !important;
+  border-radius: 6px !important;
+  padding: 5px 10px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #2c3e50 !important;
+  border: 1px solid #ccc !important;
+  width: 130px !important; /* Atur lebar agar tidak terlalu panjang */
+  height: 36px !important; /* Sesuaikan tinggi */
+  overflow: hidden !important;
+  text-align: center !important;
+}
+
+
+.goog-te-combo:hover {
+  background: #f1f1f1;
+}
+
+/* Kecilkan tinggi Google Translate Toolbar */
+.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Hapus frame tambahan yang bisa muncul */
+iframe.goog-te-banner-frame {
+  display: none !important;
+  height: 0px !important;
+  overflow: hidden !important;
+  border: none !important;
+}
+
+body > .skiptranslate {
+  display: none !important;
+  height: 0px !important;
+  overflow: hidden !important;
+}

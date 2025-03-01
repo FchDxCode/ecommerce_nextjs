@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "misis",
+  "info": {
+    "singularName": "misi",
+    "pluralName": "misis",
+    "displayName": "misi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

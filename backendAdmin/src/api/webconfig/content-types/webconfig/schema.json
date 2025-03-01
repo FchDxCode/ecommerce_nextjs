@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "webconfigs",
+  "info": {
+    "singularName": "webconfig",
+    "pluralName": "webconfigs",
+    "displayName": "Web Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_web": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "logo_web": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "embed_maps": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
