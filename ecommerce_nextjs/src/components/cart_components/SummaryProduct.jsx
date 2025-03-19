@@ -16,7 +16,7 @@ export default function SummaryProduct({ cartItems }) {
     
     setTotalPrice(total);
     setTotalItems(items);
-  }, [cartItems]); // Hanya update ketika cartItems berubah
+  }, [cartItems]); 
 
   const generateWhatsAppMessage = () => {
     if (cartItems.length === 0) return "";
